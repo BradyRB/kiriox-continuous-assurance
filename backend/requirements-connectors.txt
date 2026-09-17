@@ -1,0 +1,6 @@
+# Optional source drivers. Install only the engines used by the deployment.
+pyodbc
+pymysql
+mariadb
+oracledb
+ibm-db-sa

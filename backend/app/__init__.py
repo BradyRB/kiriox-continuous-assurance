@@ -1,0 +1,1 @@
+"""Kiriox local assurance backend."""

@@ -1,0 +1,17 @@
+backend/.venv/
+backend/storage/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+frontend/node_modules/
+frontend/.next/
+frontend/test-results/
+frontend/tsconfig.tsbuildinfo
+.env
+*.log
+coverage.xml
+htmlcov/
+work/*
+!work/.gitkeep

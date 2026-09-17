@@ -1,0 +1,46 @@
+:root {
+  --kiriox-light: #f2f3f4;
+  --kiriox-light-secondary: #ebeaed;
+  --kiriox-deep-navy: #020035;
+  --kiriox-navy: #02066f;
+  --kiriox-primary: #2000b1;
+  --kiriox-orange: #ed4b00;
+
+  --kiriox-primary-hover: #02066f;
+  --kiriox-primary-pressed: #020035;
+  --kiriox-primary-subtle: #efedff;
+  --kiriox-primary-border: #bcb2f2;
+  --kiriox-orange-subtle: #fff0e9;
+
+  --background: var(--kiriox-light);
+  --surface: #ffffff;
+  --surface-secondary: var(--kiriox-light-secondary);
+  --border: #dfe0e6;
+  --border-strong: #bfc1cf;
+  --text-primary: var(--kiriox-deep-navy);
+  --text-secondary: #56607a;
+  --text-muted: #858ba0;
+  --text-inverse: #ffffff;
+  --success: #16805d;
+  --warning: #b56b13;
+  --error: #c23f3c;
+  --info: #2d5fa8;
+
+  --kiriox-space-1: 4px;
+  --kiriox-space-2: 8px;
+  --kiriox-space-3: 12px;
+  --kiriox-space-4: 16px;
+  --kiriox-space-5: 20px;
+  --kiriox-space-6: 24px;
+  --kiriox-space-8: 32px;
+  --kiriox-space-10: 40px;
+  --kiriox-radius-sm: 8px;
+  --kiriox-radius-md: 12px;
+  --kiriox-radius-lg: 18px;
+  --kiriox-shadow-soft: 0 12px 32px rgba(2, 0, 53, .05);
+  --kiriox-shadow-focus: 0 0 0 3px rgba(32, 0, 177, .13);
+  --kiriox-border-hover: #c9cbe0;
+  --kiriox-font-sans: Inter, "Segoe UI", Arial, Helvetica, sans-serif;
+  --kiriox-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --kiriox-transition: 160ms ease;
+}
