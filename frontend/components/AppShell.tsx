@@ -5,11 +5,11 @@ import { Activity, CalendarClock, Database, History, Settings2, ShieldAlert } fr
 
 const items = [
   { label: "Fuentes de datos", count: true, icon: Database },
-  { label: "Explorador PostgreSQL", icon: Activity },
-  { label: "Historial de ejecuciones", icon: History },
-  { label: "Excepciones", icon: ShieldAlert },
-  { label: "Schedules", icon: CalendarClock },
-  { label: "Configuración", icon: Settings2 },
+  { label: "Conectar una base de datos", icon: Activity },
+  { label: "Actividad", icon: History },
+  { label: "Datos por revisar", icon: ShieldAlert },
+  { label: "Automatizaciones", icon: CalendarClock },
+  { label: "Preferencias", icon: Settings2 },
 ];
 
 export function AppShell({ children, active, sourceCount, onNavigate }: { children: ReactNode; active: string; sourceCount: number; onNavigate: (item: string) => void }) {

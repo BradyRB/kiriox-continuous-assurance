@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Iterator
 from xml.etree.ElementTree import iterparse
 from openpyxl import load_workbook
+import xlrd
 
 @dataclass(frozen=True)
 class FileProfile:
@@ -53,8 +54,24 @@ class DelimitedReader(FileReader):
         return FileProfile(columns, sample, sum(1 for _ in self.rows(path, options)))
 
 class ExcelReader(FileReader):
-    extensions = (".xlsx",)
+    extensions = (".xlsx", ".xls")
     def rows(self, path: Path, options: dict):
+        if path.suffix.lower() == ".xls":
+            workbook = xlrd.open_workbook(path.as_posix(), on_demand=True)
+            sheet = options.get("sheet") or workbook.sheet_names()[0]
+            ws = workbook.sheet_by_name(sheet)
+            header_row = int(options.get("header_row", 1))
+            headers = None
+            try:
+                for index in range(header_row - 1, ws.nrows):
+                    values = ws.row_values(index)
+                    if headers is None:
+                        headers = [str(v).strip() or f"column_{i}" for i, v in enumerate(values, 1)]
+                        continue
+                    yield {headers[i]: _clean(values[i]) if i < len(values) else None for i in range(len(headers))}
+            finally:
+                workbook.release_resources()
+            return
         workbook = load_workbook(path, read_only=True, data_only=True)
         sheet = options.get("sheet") or workbook.sheetnames[0]
         ws = workbook[sheet]; header_row = int(options.get("header_row", 1)); headers = None

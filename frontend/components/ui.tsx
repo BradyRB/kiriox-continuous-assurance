@@ -15,7 +15,24 @@ export function DataTable({ children, className = "" }: { children: ReactNode; c
 
 export function StatusBadge({ status }: { status: string }) {
   const normalized = status.toLowerCase();
-  return <span className={`status-badge status-${normalized}`}><i />{status.replaceAll("_", " ")}</span>;
+  const labels: Record<string, string> = {
+    active: "Activa",
+    inactive: "Pausada",
+    completed: "Completada",
+    completed_with_errors: "Completada con avisos",
+    failed: "No se pudo completar",
+    running: "En curso",
+    warning: "Aviso",
+    error: "Revisar",
+    daily: "Cada día",
+    hourly: "Cada hora",
+    every_x_hours: "Cada ciertas horas",
+    weekly: "Cada semana",
+    monthly: "Cada mes",
+    cron: "Personalizada",
+    manual: "Manual",
+  };
+  return <span className={`status-badge status-${normalized}`}><i />{labels[normalized] || status.replaceAll("_", " ")}</span>;
 }
 
 export function EmptyState({ title, description, action }: { title: string; description: string; action?: ReactNode }) {

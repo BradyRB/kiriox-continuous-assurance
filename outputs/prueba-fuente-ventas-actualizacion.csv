@@ -1,0 +1,7 @@
+ID,Customer,TransactionDate,Amount,Status,Region
+1001,Ana Torres,2026-09-01,1325.50,PAID,Norte
+1002,Carlos Mateo,2026-09-02,890.00,PAID,Sur
+1003,Laura Diaz,2026-09-03,430.75,PAID,Este
+1004,Pedro Castillo,2026-09-04,2180.20,PAID,Oeste
+1005,Mariana Perez,2026-09-05,670.00,CANCELLED,Norte
+1006,Jose Ramirez,2026-09-06,1540.00,PAID,Sur

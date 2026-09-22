@@ -1,0 +1,21 @@
+ID,Customer,TransactionDate,Amount,Status,Region
+1001,Ana Torres,2026-09-01,1250.50,PAID,Norte
+1002,Carlos Mateo,2026-09-02,890.00,PAID,Sur
+1003,Laura Diaz,2026-09-03,430.75,PENDING,Este
+1004,Pedro Castillo,2026-09-04,2180.20,PAID,Oeste
+1005,Mariana Perez,2026-09-05,670.00,CANCELLED,Norte
+1006,Jose Ramirez,2026-09-06,1540.00,PAID,Sur
+1007,Sofia Herrera,2026-09-07,760.25,PENDING,Este
+1008,Diego Morales,2026-09-08,3120.00,PAID,Oeste
+1009,Valentina Cruz,2026-09-09,945.80,PAID,Norte
+1010,Andres Gomez,2026-09-10,515.40,CANCELLED,Sur
+1011,Camila Santos,2026-09-11,1180.00,PAID,Este
+1012,Miguel Fernandez,2026-09-12,2490.60,PAID,Oeste
+1013,Daniela Reyes,2026-09-13,380.00,PENDING,Norte
+1014,Ricardo Vargas,2026-09-14,875.90,PAID,Sur
+1015,Elena Navarro,2026-09-15,1635.45,PAID,Este
+1016,Patricia Leon,2026-09-16,2210.00,PAID,Oeste
+1017,Felipe Ortega,2026-09-17,690.35,PENDING,Norte
+1018,Gabriela Mendez,2026-09-18,1425.00,PAID,Sur
+1019,Victor Campos,2026-09-19,980.80,PAID,Este
+1020,Natalia Rojas,2026-09-20,3050.10,CANCELLED,Oeste

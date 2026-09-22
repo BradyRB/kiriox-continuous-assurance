@@ -1,0 +1,6 @@
+ID,Customer,TransactionDate,Amount,Status,Region
+2001,Sofia Gomez,2026-09-07,1500.00,PAID,Este
+2002,Diego Santos,2026-09-08,no-disponible,PAID,Sur
+2003,Elena Cruz,2026-09-09,,PENDING,Norte
+2004,Raul Mendez,fecha-invalida,275.00,PAID,Oeste
+2005,Carla Ruiz,2026-09-10,-80.00,PAID,Este
